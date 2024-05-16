@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="VALORANTLEAGUE">
+    <title>Valorant League</title>
+    <link rel="stylesheet" href="lobby.css">
+    <style>
+        body{
+            font-family: "Prompt", sans-serif;
+            background-image: url(lobbybackground.jpg);
+            background-repeat: no-repeat;
+            background-size: auto;
+            color: #ECE8E1;
+            background-color: black;
+            margin-top: 300px;
+            background-position: -500px -20px;
+        }
+        .PreMain{
+            letter-spacing: 6px;
+            padding-left: 500px;
+        }
+        .Main{
+            font-size: 100px;
+            padding-left: 500px;
+        }
+        .Content{
+            font-size: 40px;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            margin-left: -100px;
+        }
+        button{
+            font-size: 1.7rem;
+            padding: 10px 30px;
+            background: none;
+            border: 1px;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: .4s;;
+            font-family: "Prompt", sans-serif;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin-left: 505px;
+            bottom: 68px;
+            left: 4px;
+            visibility: visible;
+
+        }
+        button::before{
+            content:'';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: #FF4655;
+            left: 0;
+            top: 0;
+            transition: .5s;
+            z-index: -2;
+        }
+        button::after{
+            content:'';
+            width: 0%;
+            height: 100%;
+            position: absolute;
+            background: #0F1923;
+            top: 0px;
+            left: -10px;
+            z-index: -1;
+            transition: .5s;
+        }
+        button:hover{
+            color: white;
+        }
+        button:hover::after{
+            width: 120%;
+            transform: skew(-20deg);
+        }
+        div{
+            border: 1px solid white;
+            padding: 10px;
+            width: 157px;
+            height: 75px;
+            margin-left: 400px;
+            opacity: 50%;
+        }
+        .warp{
+            visibility: hidden;
+        }
+    
+    </style>
+</head>
+<body>
+    <!-- ส่วนหัวข้อ -->
+    <h4 align="left" class="PreMain">EPISODE_08 // ACT II / YR 4</h4>
+    <h1 align="left" class="Main">VALORANT League</h1>
+    <!-- สร้างกล่องเหมือนปุ่มวาปไปหน้า content -->
+    <div></div>
+    <a href="content.html" class="warp">
+        <button>ท้าทาย </button> 
+    </a>
+</body>
+</html>
